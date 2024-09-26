@@ -1,0 +1,14 @@
+
+### **SysBackground.enableHcaptchaSolver(autoOpen)**
+
+**Description:**
+The `SysBackground.enableHcaptchaSolver(autoOpen)` function enables the automatic solving of hCaptcha challenges using the `SysContent.enableSafeHcaptchaSolver` method. The `autoOpen` parameter specifies whether the hCaptcha anchor should automatically open or not.
+
+**Parameters:**
+- **autoOpen** (Boolean): If set to `true`, the hCaptcha anchor will automatically open. If set to `false`, the anchor will not be opened automatically.
+
+**Example:**
+
+```javascript
+SysBackground.enableHcaptchaSolver(true);  // Automatically open the hCaptcha anchor and start solving.
+```

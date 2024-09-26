@@ -1,0 +1,13 @@
+### **SysBackground.enableRecaptchaSolver(autoOpen)**
+
+**Description:**
+The `SysBackground.enableRecaptchaSolver(autoOpen)` function enables the automatic solving of reCAPTCHA challenges using the `SysContent.enableSafeRecaptchaSolver` method. The `autoOpen` parameter specifies whether the reCAPTCHA anchor should automatically open or not.
+
+**Parameters:**
+- **autoOpen** (Boolean): If set to `true`, the reCAPTCHA anchor will automatically open. If set to `false`, the anchor will not be opened automatically.
+
+**Example:**
+
+```javascript
+SysBackground.enableRecaptchaSolver(true);  // Automatically open the reCAPTCHA anchor and start solving.
+```

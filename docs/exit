@@ -1,0 +1,13 @@
+# **SysBackground.exit(delay_seconds)**
+
+**Description:**
+The `SysBackground.exit(delay_seconds)` function closes the browser and exits the plugin after a specified delay.
+
+**Parameters:**
+- **delay_seconds** (Number): The time in seconds before the plugin exits and the browser is closed.
+
+**Example:**
+
+```javascript
+SysBackground.exit(30);  // Exit the plugin and close the browser after 30 seconds.
+```

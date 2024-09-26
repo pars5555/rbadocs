@@ -1,0 +1,75 @@
+# **SysBackground Logging Functions**
+
+## **Overview**
+
+These logging functions are used to print various levels of log messages (debug, log, error, warn) within the context of a running plugin. The logs are printed on the page where the user is running the plugin, helping to monitor the plugin's behavior and debug issues.
+
+The functions rely on SysBackground.__debug_log to handle the actual logging.
+
+---
+
+## **Functions**
+
+### **1. debug()**
+
+**Description:**
+The debug() function is used to print debug-level messages to the user’s plugin page. This level of logging is typically used for verbose output during development to understand the internal state of the plugin.
+
+**Example:**
+
+```javascript
+SysBackground.debug('This is a debug message');
+```
+
+---
+
+### **2. log()**
+
+**Description:**
+The log() function prints general log messages, typically used for informative messages that are not errors or warnings. This is useful for tracking the plugin's flow and actions.
+
+**Example:**
+
+```javascript
+SysBackground.log('User action recorded');
+```
+---
+
+### **3. error()**
+
+**Description:**
+The error() function is used to print error-level messages to the user’s plugin page. These messages indicate that something went wrong during the plugin's execution and should be investigated.
+
+**Example:**
+
+```javascript
+SysBackground.error('An unexpected error occurred');
+```
+---
+
+### **4. warn()**
+
+**Description:**
+The warn() function prints warning-level messages, indicating potential issues that aren't necessarily errors but should be reviewed. This is useful for highlighting conditions that may lead to problems later in the plugin execution.
+
+**Example:**
+
+```javascript
+SysBackground.warn('This action may cause delays');
+```
+---
+
+## **How They Work**
+
+All four functions rely on the underlying SysBackground.__debug_log function, which takes the following parameters:
+- **arguments**: The actual log message or data being passed to the function.
+- **logType**: The type of log being generated (debug, log, error, or warn).
+- **context**: Indicates that the log is being generated in the background script.
+
+The logs are printed to the user’s page, helping with real-time monitoring and debugging of the plugin's behavior.
+
+---
+
+## **Advanced Usage**
+
+These functions can be combined with conditionals and event handlers to provide real-time feedback on the status of the plugin's execution, helping developers understand what’s happening at every stage of the process.

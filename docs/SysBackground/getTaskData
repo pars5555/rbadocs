@@ -1,0 +1,14 @@
+# **SysBackground.getTaskData()**
+
+**Description:**
+The `SysBackground.getTaskData()` function retrieves the task data passed to the plugin during its execution. This data is typically used to guide the plugin's behavior based on parameters or settings provided at runtime.
+
+**Return Value:**
+The task data associated with the plugin execution.
+
+**Example:**
+
+```javascript
+let taskData = SysBackground.getTaskData();
+console.log(taskData);
+```
